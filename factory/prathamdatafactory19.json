@@ -1,0 +1,15 @@
+{
+	"name": "prathamdatafactory19",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "6a104dd0-2318-486e-afac-3a9b21ad6616",
+		"tenantId": "b57ac042-9cce-49ef-9b59-4379414efbfa"
+	}
+}
