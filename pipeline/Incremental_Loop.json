@@ -262,7 +262,7 @@
 												"parameters": {
 													"container": "bronze",
 													"folder": {
-														"value": "@{item().table}_cdc",
+														"value": "@{item().table}",
 														"type": "Expression"
 													},
 													"file": {
@@ -308,7 +308,7 @@
 												{
 													"type": "Query",
 													"text": {
-														"value": "SELECT MAX(@{item().cdc_clumn}) as cdc FROM @{item().schema}.@{item().table}",
+														"value": "SELECT MAX(@{item().cdc_col}) as cdc FROM @{item().schema}.@{item().table}",
 														"type": "Expression"
 													}
 												}
