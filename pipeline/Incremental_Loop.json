@@ -225,7 +225,7 @@
 										"userProperties": [],
 										"typeProperties": {
 											"source": {
-												"type": "JsonSource",
+												"type": "ParquetSource",
 												"additionalColumns": [
 													{
 														"name": "cdc",
@@ -241,7 +241,7 @@
 													"enablePartitionDiscovery": false
 												},
 												"formatSettings": {
-													"type": "JsonReadSettings"
+													"type": "ParquetReadSettings"
 												}
 											},
 											"sink": {
@@ -257,12 +257,12 @@
 										},
 										"inputs": [
 											{
-												"referenceName": "Json_dynamic",
+												"referenceName": "parquet_dynamic",
 												"type": "DatasetReference",
 												"parameters": {
 													"container": "bronze",
 													"folder": {
-														"value": "@{item().table}",
+														"value": "@item().table",
 														"type": "Expression"
 													},
 													"file": {
